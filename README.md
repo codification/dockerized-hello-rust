@@ -10,3 +10,5 @@ Just a veeery simple experiment.
 
     $ docker run rust-hello
 
+
+...but no, this does not work. For some reason the "target" folder is not produced and no executable is found when you try to run this container.
