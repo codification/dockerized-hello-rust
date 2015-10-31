@@ -1,7 +1,7 @@
 FROM jimmycuadra/rust
 
-ADD . /source
+ADD . /my-source
 
-RUN cargo build -v --release
+RUN cd /my-source && cargo build -v --release
 
-CMD ["target/release/hello"]
+CMD ["/my-source/target/release/hello"]
